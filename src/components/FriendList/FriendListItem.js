@@ -1,6 +1,10 @@
+// Модули
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './FriendListItem.module.css'
+
+// Стили
+import styles from './FriendListItem.module.css';
+
 
 const FriendListItem = ({url, name, isOnline}) => (
     <>

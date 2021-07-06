@@ -1,12 +1,18 @@
+// Модули
 import React from 'react';
+
+// Компоненты
 import Profile from "./components/social-profile/Profile";
-import user from "./components/social-profile/user.json";
 import Statistics from "./components/statistics/Statistics";
-import statisticalData from "./components/statistics/statistical-data.json";
 import FriendList from './components/FriendList/FriendList';
-import friends from './components/FriendList/friends.json';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import transactions from './components/TransactionHistory/transactions.json'
+
+// json
+import user from "./components/social-profile/user.json";
+import statisticalData from "./components/statistics/statistical-data.json";
+import friends from './components/FriendList/friends.json';
+import transactions from './components/TransactionHistory/transactions.json';
+
 
 const App = () => {
     return (

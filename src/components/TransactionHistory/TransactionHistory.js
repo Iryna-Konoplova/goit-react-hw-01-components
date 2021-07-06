@@ -1,6 +1,10 @@
+// Модули
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Стили
 import styles from './TransactionHistor.module.css';
+
 
 const TransactionHistory = ({ transactions }) => (
     <>

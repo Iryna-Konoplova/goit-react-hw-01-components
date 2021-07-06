@@ -1,6 +1,10 @@
+// Модули
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Стили
 import styles from './Statistics.module.css';
+
 
 const Statistics = ({title, stats}) => (   
       <section className={styles.statistics}>

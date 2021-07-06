@@ -1,5 +1,8 @@
+// Модули
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Стили
 import styles from './Profile.module.css';
 
 
