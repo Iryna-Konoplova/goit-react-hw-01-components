@@ -5,8 +5,8 @@ import Statistics from "./components/statistics/Statistics";
 import statisticalData from "./components/statistics/statistical-data.json";
 import FriendList from './components/FriendList/FriendList';
 import friends from './components/FriendList/friends.json';
-
-console.log(statisticalData)
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './components/TransactionHistory/transactions.json'
 
 const App = () => {
     return (
@@ -26,6 +26,9 @@ const App = () => {
             />
             <FriendList
                 friends={friends}
+            />
+            <TransactionHistory
+            transactions={transactions}
             />
         </div>
     );

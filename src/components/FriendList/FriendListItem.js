@@ -4,9 +4,9 @@ import styles from './FriendListItem.module.css'
 
 const FriendListItem = ({url, name, isOnline}) => (
     <>
-        <span className={`${styles.status} ${styles.online}`} ></span>
-        <img className="avatar" src={url} alt={name} width="48" />
-        <p className="name">{name}</p>
+        {isOnline ? <span className={styles.statusOnline} ></span> : <span className={styles.status} ></span>}
+        <img className={styles.avatar} src={url} alt={name} width="48" />
+        <p className={styles.name}>{name}</p>
     </>
 );
 
