@@ -7,9 +7,8 @@ import styles from './Statistics.module.css';
 
 
 const Statistics = ({title, stats}) => (   
-      <section className={styles.statistics}>
-        <h2 className={styles.title}>{title}</h2>
-
+  <section className={styles.statistics}>
+     {title && <h2 className={styles.title}>{title}</h2>}   
         <ul className={styles.statList}>
             {stats.map((stat) => (
                 <li className={styles.item} key={stat.id} style={{ backgroundColor: `rgba( ${random()} , ${random()} , ${random()}` }}>
@@ -21,7 +20,12 @@ const Statistics = ({title, stats}) => (
       </section>
 );
 
+Statistics.defaultProps = {
+    title: ""
+};
+
 Statistics.propTypes = {
+    title: PropTypes.string,
     stats: PropTypes.array.isRequired
 };
 
