@@ -11,7 +11,15 @@ import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friendList}>
-    <FriendListItem friends={friends} />,
+    {friends.map((friend) => (
+      <FriendListItem
+        key={friend.id}
+        avatar={friend.avatar}
+        name={friend.name}
+        isOnline={friend.isOnline}
+      />
+    )
+    )}
   </ul>
 );
 
@@ -20,3 +28,17 @@ FriendList.propTypes = {
 };
 
 export default FriendList;
+
+
+
+
+
+// const FriendList = ({ friends }) => (
+//   <ul className={styles.friendList}>
+//     <FriendListItem friends={friends} />,
+//   </ul>
+// );
+
+// FriendList.propTypes = {
+//     friends: PropTypes.array.isRequired
+// };
